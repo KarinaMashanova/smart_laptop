@@ -1,0 +1,58 @@
+﻿[
+  {
+    "category": "Аксессуары",
+    "title": "Зарядка и кабели",
+    "description": "Блоки питания, кабели Type-C и MagSafe-зарядки. Только проверенные бренды, безопасные для iPhone и Mac.",
+    "image": "assets/images/accessory_adapter.png",
+    "availability": "В наличии"
+  },
+  {
+    "category": "Аксессуары",
+    "title": "Наушники",
+    "description": "Наушники, переходники и аксессуары для комфортного прослушивания музыки и звонков.",
+    "image": "assets/images/accessory_airpods.png",
+    "availability": "В наличии"
+  },
+  {
+    "category": "Аксессуары",
+    "title": "Защита экрана и корпуса",
+    "description": "Стёкла, плёнки, чехлы и бамперы для актуальных моделей iPhone. Поможем подобрать уровень защиты под ваш девайс.",
+    "image": "assets/images/accessory_cable.png",
+    "availability": "В наличии"
+  },
+  {
+    "category": "Аксессуары",
+    "title": "Чехлы с MagSafe",
+    "description": "Мягкие премиальные материалы, защитные бортики вокруг камеры и полная совместимость с MagSafe.",
+    "image": "assets/images/accessory_case.png",
+    "availability": "В наличии"
+  },
+  {
+    "category": "Сервис",
+    "title": "Диагностика и замена аккумулятора",
+    "description": "Проверим износ батареи, сохраним данные и заменим аккумулятор с оригинальными компонентами.",
+    "image": "assets/images/service_battery.png",
+    "availability": "От 15 минут"
+  },
+  {
+    "category": "Сервис",
+    "title": "Замена стекла и дисплея",
+    "description": "Оригинальные или проверенные аналоги, сохранение True Tone и чувствительности сенсора.",
+    "image": "assets/images/service_display.png",
+    "availability": "От 30 минут"
+  },
+  {
+    "category": "Сервис",
+    "title": "Ультразвуковая чистка",
+    "description": "Вернём громкость динамиков и чистоту микрофона, уберём влагу и пыль, проверим герметичность.",
+    "image": "assets/images/service_clean.png",
+    "availability": "От 15 минут"
+  },
+  {
+    "category": "Сервис",
+    "title": "Перенос данных и настройка",
+    "description": "Перенесём контакты, фото, заметки и приложения с любого смартфона, настроим Apple ID и платежи.",
+    "image": "assets/images/service_transfer.png",
+    "availability": "От 30 минут"
+  }
+]
