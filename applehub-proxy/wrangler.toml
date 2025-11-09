@@ -1,0 +1,6 @@
+name = "applehub-proxy"
+main = "src/index.js"
+compatibility_date = "2025-10-27"
+
+[observability]
+enabled = true
