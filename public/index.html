@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AppleHub — iPhone 17, сервис и аксессуары</title>
+  <meta name="description" content="AppleHub в Чебоксарах: iPhone 17, сервис, аксессуары, рассрочка Finbox и программа AppleHub Care+." />
+
+  <link rel="icon" type="image/png" href="assets/images/logo_start.png" />
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+
+<body data-page="home">
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="AppleHub">
+        <img src="assets/images/logo_start.png" alt="AppleHub — техника и сервис" />
+      </a>
+      <a href="tel:+78352596969" class="header__phone">+7 (8352) 59-69-69</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="preorder">
+      <div class="container hero__layout">
+        <header class="hero__intro">
+          <span class="hero__badge">iPhone 17 в AppleHub</span>
+          <h1>Новая линейка iPhone 17 — теперь в AppleHub</h1>
+          <p>Сопровождаем покупку от консультации до настройки. Поможем перенести данные, установить защиту и активировать AppleHub Care+.</p>
+        </header>
+
+        <div class="hero__media">
+          <img src="assets/images/iphones.png" alt="iPhone 17 в AppleHub" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="container hero__cards">
+        <article class="card">
+          <h3>Готовим устройство к старту</h3>
+          <p>Переносим данные, подключаем Apple ID и eSIM, настраиваем платежи и уведомления — всё, чтобы вы ушли с полностью готовым iPhone.</p>
+        </article>
+        <article class="card">
+          <h3>Оригинальные аксессуары</h3>
+          <p>Чехлы, стёкла, блоки питания и AirPods — только проверенные бренды Remax, Keephone и G-Rhino в наличии.</p>
+        </article>
+        <article class="card">
+          <h3>AppleHub Care+</h3>
+          <p>Сопровождение после покупки: настройка iCloud, установка банков, резервное копирование и расширенная гарантия.</p>
+        </article>
+        <article class="card">
+          <h3>Trade-in и обновление с выгодой</h3>
+          <p>Оценим ваш iPhone, зачтём стоимость и предложим лучшие условия на обновление. Бонусы действуют в день покупки.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="catalog-panel">
+          <header class="section__header">
+            <span class="hero__badge">Каталог AppleHub</span>
+            <h2>Товары и сервис</h2>
+            <p>Подбираем аксессуары и сервис под ваши задачи: защита, зарядка, настройка и ремонт.</p>
+          </header>
+
+          <div class="tabs" role="tablist" aria-label="Фильтр каталога">
+            <button class="tab tab--active" type="button" data-filter="all" role="tab" aria-selected="true">Все</button>
+            <button class="tab" type="button" data-filter="аксессуары" role="tab" aria-selected="false">Товары</button>
+            <button class="tab" type="button" data-filter="сервис" role="tab" aria-selected="false">Сервис</button>
+          </div>
+
+          <div id="catalogEmpty" class="alert hidden" role="status"></div>
+          <div id="catalogGrid" class="catalog-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАКОЙ ВЫ СЕГОДНЯ IPHONE -->
+    <section class="section" id="iphone-today">
+      <div class="container">
+        <div class="iphone-card">
+          <span class="hero__badge">AppleHub</span>
+          <h2>Какой вы сегодня iPhone?</h2>
+          <p>AppleHub подскажет, какая модель подойдёт вашему стилю. Результат поможет выбрать цвет, память и рассрочку без сомнений.</p>
+          <button id="iphoneQuizButton" class="button button--filled" type="button">Подобрать модель</button>
+
+          <div id="iphoneResult" class="iphone-result">
+            <img id="iphoneImage" src="assets/images/iphones.png" alt="Результат подбора iPhone в AppleHub" />
+            <div>
+              <h3 id="iphoneTitle"></h3>
+              <p id="iphoneText"></p>
+            </div>
+            <a class="button button--filled" href="#credit">Перейти к рассрочке</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕРВИСЫ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__header">
+          <span class="hero__badge">Сервисы AppleHub</span>
+          <h2>Гарантия, обслуживание и поддержка</h2>
+          <p>Сделаем владение техникой простым: от расширенной защиты до персонального сервиса.</p>
+        </header>
+
+        <div class="service-grid">
+          <article class="card">
+            <article class="card" id="warranty">
+              <h3>AppleHub Care+ — оформление гарантии</h3>
+              <p>Продлите защиту вашего устройства и получите приоритетный сервис от AppleHub.</p>
+              <ul>
+                <li>Расширенная гарантия на 24 месяца</li>
+                <li>Обслуживание и ремонт в приоритетном порядке</li>
+                <li>Оригинальные комплектующие и поддержка AppleHub</li>
+              </ul>
+
+              <button id="warrantyButton" class="button button--filled" style="margin-top:16px;">Оформить гарантию</button>
+              <div id="warrantyFormBlock" class="hidden" style="margin-top: 20px;">
+                <form id="warrantyForm" novalidate>
+                  <label class="label">
+                    Имя
+                    <input class="input" type="text" name="warrantyName" placeholder="Ваше имя" required />
+                  </label>
+                  <label class="label">
+                    Телефон
+                    <input class="input" type="tel" name="warrantyPhone" placeholder="+7 (999) 000-00-00" required />
+                  </label>
+                  <button type="submit" class="button button--filled">Отправить заявку</button>
+                  <p id="warrantyAlert" class="alert hidden" role="status"></p>
+                </form>
+              </div>
+            </article>
+
+
+          <article class="card">
+            <h3>Trade-in и обновление</h3>
+            <p>Оценим ваш iPhone в день обращения и предложим лучшие условия для обмена на новую модель. Все расчёты и оформление — через менеджера AppleHub.</p>
+            <ul>
+              <li>Быстрая оценка устройства без ожидания</li>
+              <li>Возможность зачёта стоимости в день обращения</li>
+              <li>Официальное оформление и гарантия на новый iPhone</li>
+            </ul>
+            <p style="margin-top:12px; color:var(--color-muted); font-size:14px;">Узнайте оценочную стоимость у менеджера AppleHub</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- РАССРОЧКА (FINBOX) -->
+    <section class="section" id="credit">
+      <div class="container">
+        <div class="credit-card">
+          <span class="hero__badge">Finbox</span>
+          <h2>Рассрочка за 15 минут</h2>
+          <p>
+            Digital-оформление без справок и визита в банк — всё подписывается прямо со смартфона.
+            Решение приходит мгновенно.
+          </p>
+
+          <ul class="credit-list">
+            <li>Без первого взноса и скрытых комиссий</li>
+            <li>Подписание в салоне за 15 минут</li>
+            <li>Согласование через Finbox</li>
+          </ul>
+
+          <finbox-create-order
+            data='{
+              "login": "SmartHub_Cheboksary_Osipov_api_fb",
+              "pointId": "120920251420",
+              "goods": [
+                {
+                  "title": "iPhone",
+                  "price": 100000
+                }
+              ]
+            }'
+          >
+            <button class="button button--filled">Оформить рассрочку</button>
+          </finbox-create-order>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="discount">
+      <div class="container discount-layout">
+        <article class="discount-card">
+          <span class="hero__badge">Колесо скидок</span>
+          <h2>Запустите колесо и получите бонус</h2>
+          <p>Получи моментальную скидку в день покупки!</p>
+
+          <form id="surveyForm" class="discount-form" novalidate>
+            <label class="label">
+              Имя
+              <input class="input" type="text" name="name" placeholder="Как вас зовут?" required />
+            </label>
+            <label class="label">
+              Телефон
+              <input class="input" type="tel" name="phone" placeholder="+7 (999) 000-00-00" inputmode="tel" required />
+            </label>
+
+            <p class="survey-intro">Короткая анкета для покупателей техники Apple. Это займёт не более 1 минуты.</p>
+
+            <label class="label">Сколько вам лет?</label>
+            <input class="input" type="number" name="age" min="10" max="100" placeholder="Ваш возраст" required />
+
+            <label class="label">Для каких целей вы приобретаете технику?</label>
+            <select class="input" name="purpose" required>
+              <option value="">Выберите вариант</option>
+              <option>Для личного использования / развлечений</option>
+              <option>Для работы / бизнеса</option>
+              <option>Для учёбы</option>
+              <option>В подарок</option>
+              <option>Для творчества / профессиональных задач</option>
+              <option>Для замены старого устройства</option>
+              <option>Другое</option>
+            </select>
+
+            <label class="label">Это ваша первая покупка в нашем магазине?</label>
+            <select class="input" name="firstTime" required>
+              <option value="">Выберите ответ</option>
+              <option>Да</option>
+              <option>Нет</option>
+            </select>
+
+            <label class="label">Насколько вы удовлетворены обслуживанием?</label>
+            <select class="input" name="satisfaction" required>
+              <option value="">Оцените по шкале 1–5</option>
+              <option>1 — Совсем не доволен</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5 — Очень доволен</option>
+            </select>
+
+            <label class="label">Где вы узнали о нашем магазине?</label>
+            <select class="input" name="source" required>
+              <option value="">Выберите вариант</option>
+              <option>Интернет-поиск (Google, Яндекс, 2ГИС)</option>
+              <option>Социальные сети</option>
+              <option>Рекомендации друзей или коллег</option>
+              <option>Реклама (в интернете, на радио и т.д.)</option>
+              <option>Вывеска или наружная реклама</option>
+              <option>Случайно проходил мимо</option>
+              <option>Другое</option>
+            </select>
+
+            <button id="spinButton" class="button button--filled" type="submit">Запустить колесо</button>
+          </form>
+
+          <div id="wheelWrapper" class="hidden" aria-live="polite">
+            <div class="wheel-wrapper">
+              <span class="wheel-wrapper__halo" aria-hidden="true"></span>
+              <div id="wheel" class="wheel" role="img" aria-label="Колесо фортуны AppleHub">
+                <div class="wheel__dividers" aria-hidden="true"></div>
+                <div class="wheel__labels">
+                  <span style="--index:0">1%</span>
+                  <span style="--index:1">2%</span>
+                  <span style="--index:2">3%</span>
+                  <span style="--index:3">4%</span>
+                  <span style="--index:4">5%</span>
+                  <span style="--index:5">6%</span>
+                  <span style="--index:6">7%</span>
+                  <span style="--index:7">8%</span>
+                  <span style="--index:8">9%</span>
+                  <span style="--index:9">10%</span>
+                </div>
+                <div class="wheel-center">
+                  <span>AppleHub</span>
+                  <small>bonus</small>
+                </div>
+              </div>
+              <div class="wheel-indicator" aria-hidden="true">
+                <span></span>
+              </div>
+            </div>
+            <p id="discountResult" class="caption fortune-result"></p>
+          </div>
+
+          <div class="qr-thanks review-card">
+            <div class="review-card__content">
+              <p class="review-card__eyebrow">Поделитесь впечатлением об AppleHub</p>
+              <h3>Ваш отзыв помогает нам расти и совершенствовать сервис</h3>
+              <p>Сканируйте QR — он ведёт на нашу страницу в Яндекс.Картах</p>
+              <ul class="review-card__meta">
+                <li>Ответ займет не больше 1 минуты</li>
+                <li>Мы ценим вашу обратную связь</li>
+              </ul>
+            </div>
+            <div class="review-card__qr">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://yandex.ru/maps/-/CLv3NO4s"
+                alt="QR-код AppleHub — перейти в Яндекс.Карты"
+                width="180"
+                height="180"
+                loading="lazy"
+              />
+
+              <span>AppleHub на Яндекс.Картах</span>
+            </div>
+          </div>
+
+
+
+          <p id="surveyMessage" class="hidden" style="margin-top: 20px; font-size: 16px; color: var(--color-accent);">
+            Спасибо за ответы! Ваш бонус активирован 🎉
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ОПЛАТА ПО СБП -->
+  <section class="section" id="payment">
+    <div class="container qr-card">
+      <div class="qr-card__content">
+        <span class="hero__badge">AppleHub</span>
+        <h2>Оплата по СБП</h2>
+        <p>Плати легко и удобно:</p>
+        <ul style="list-style: none; padding: 0; margin-top: 12px; color: var(--color-muted); font-size: 16px;">
+          <li>1. Отсканируй QR-код</li>
+          <li>2. Выбери банк для оплаты</li>
+          <li>3. Подтверди оплату</li>
+        </ul>
+      </div>
+
+      <div class="qr-card__image">
+        <img
+          src="assets/images/qr.jpg"
+          alt="QR-код для оплаты по СБП в AppleHub"
+          width="260"
+          height="260"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> AppleHub. Все права защищены.</span><br />
+      <span>Чебоксары, ул. Калинина 105А, ТЦ «Мегамолл», 1 этаж</span>
+      <a class="footer__phone" href="tel:+78352596969">+7 (8352) 596-969</a>
+    </div>
+  </footer>
+
+  <!-- Сначала FinBox, потом твой JS -->
+  <script src="https://go.fbox.me/app/elements/fbox-create-order.js"></script>
+  <script src="assets/scripts/app.js" defer></script>
+</body>
+</html>
